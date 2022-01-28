@@ -3,11 +3,11 @@ package launchings;
 public class TC_001 extends BaseTest
 {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) throws Exception 
 	{
-		launcher("chrome");
-		navigateUrl("https://www.amazon.in");
-
+		init();
+		launcher("chromebrowser");
+		navigateUrl("amazonurl");
 	}
 
 }

@@ -3,10 +3,11 @@ package launchings;
 public class TC_002 extends BaseTest
 {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) throws Exception 
 	{
-		launcher("firefox");
-		navigateUrl("https://www.bestbuy.com");
+		init();
+		launcher("firefoxbrowser");
+		navigateUrl("bestbuyurl");
 	}
 
 }
