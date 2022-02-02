@@ -23,7 +23,7 @@ public class BaseTest
 		fis = new FileInputStream(projectPath+"/src/main/resources/data.properties");
 		p = new Properties();
 		p.load(fis);
-		String value = p.getProperty("amazonurl");
+		//String value = p.getProperty("amazonurl");
 		//System.out.println(value);
 		
 		fis = new FileInputStream(projectPath+"/src/main/resources/environment.properties");
@@ -35,8 +35,8 @@ public class BaseTest
 		fis = new FileInputStream(projectPath+"/src/main/resources/"+e+".properties");
 		childProp = new Properties();
 		childProp.load(fis);
-		String v = childProp.getProperty("amazonurl");
-		System.out.println(v);
+		String value = childProp.getProperty("amazonurl");
+		System.out.println(value);
 	}
 	
 	public static void launcher(String browser)
@@ -52,7 +52,8 @@ public class BaseTest
 	
 	public static void navigateUrl(String url)
 	{
-		driver.get(childProp.getProperty(url));
+		//driver.get(childProp.getProperty(url));
+		driver.navigate().to(childProp.getProperty(url));
 	}
 
 }
