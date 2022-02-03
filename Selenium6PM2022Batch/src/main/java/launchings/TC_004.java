@@ -1,10 +1,13 @@
 package launchings;
 
-public class TC_004 {
+public class TC_004 extends BaseTest
+{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("hello");
+	public static void main(String[] args) throws Exception 
+	{
+		init();
+		launcher("firefoxbrowser");
+		navigateUrl("certificateurl");
 	}
 
 }

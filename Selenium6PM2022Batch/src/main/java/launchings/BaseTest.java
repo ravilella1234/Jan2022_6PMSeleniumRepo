@@ -6,6 +6,9 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.ProfilesIni;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -46,7 +49,26 @@ public class BaseTest
 			driver = new ChromeDriver();
 		}else if(p.getProperty(browser).equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			
+			ProfilesIni p = new ProfilesIni();
+			FirefoxProfile profile = p.getProfile("Jan2022FF");
+			
+			FirefoxOptions option = new FirefoxOptions();
+			option.setProfile(profile);
+
+			// Handling Browser Notification
+			profile.setPreference("dom.webnotifications.enabled", false);
+			
+			//Handling certificate error
+			profile.setAcceptUntrustedCertificates(true);
+			profile.setAssumeUntrustedCertificateIssuer(false);
+			
+			//How to work with Proxy Settings
+			profile.setPreference("network.proxy.type", 1);
+			profile.setPreference("network.proxy.socks", "192.168.10.1");
+			profile.setPreference("network.proxy.socks_port", 1744);
+			
+			driver = new FirefoxDriver(option);
 		}
 	}
 	
