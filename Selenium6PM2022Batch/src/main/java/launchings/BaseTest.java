@@ -56,7 +56,6 @@ public class BaseTest
 	{
 		if(p.getProperty(browser).equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			
 			ChromeOptions option = new  ChromeOptions();
 			option.addArguments("user-data-dir=C:\\Users\\ravi\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 11");
 			option.addArguments("--disable-notifications");
