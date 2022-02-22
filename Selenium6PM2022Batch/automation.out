@@ -1,0 +1,6 @@
+Init the properties files....
+Opening the browser :-chrome
+Navigate to url : https://www.amazon.in
+Selecting the Option Books By using locator :-searchDropdownBox
+Enter the text Harry Potter By using locator :-twotabsearchtextbox
+Clicked on Element By using Locator : - //input[@id='nav-search-submit-button']

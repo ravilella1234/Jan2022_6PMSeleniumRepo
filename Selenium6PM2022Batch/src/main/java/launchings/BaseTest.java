@@ -3,6 +3,7 @@ package launchings;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -50,6 +51,9 @@ public class BaseTest
 		fis = new FileInputStream(projectPath+"/src/main/resources/or.properties");
 		orProp = new Properties();
 		orProp.load(fis);
+		
+		fis = new FileInputStream(projectPath+"/src/main/resources/log4jconfig.properties");
+		PropertyConfigurator.configure(fis);
 	}
 	
 	public static void launcher(String browser)
