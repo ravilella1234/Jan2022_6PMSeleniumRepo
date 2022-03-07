@@ -1,61 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Clicked on Image Link]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-03-04T13:43:59Z" name="Default suite" finished-at="2022-03-04T13:43:59Z" duration-ms="97">
+  <suite started-at="2022-03-07T13:39:15Z" name="RegressionSuite" finished-at="2022-03-07T13:40:31Z" duration-ms="75188">
     <groups>
     </groups>
-    <test started-at="2022-03-04T13:43:59Z" name="Default test" finished-at="2022-03-04T13:43:59Z" duration-ms="97">
-      <class name="project.NewTest2">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:project.NewTest2@11fc564b]" started-at="2022-03-04T13:43:59Z" name="beforeSuite" finished-at="2022-03-04T13:43:59Z" duration-ms="19" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:project.NewTest2@11fc564b]" started-at="2022-03-04T13:43:59Z" name="beforeTest" finished-at="2022-03-04T13:43:59Z" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:project.NewTest2@11fc564b]" started-at="2022-03-04T13:43:59Z" name="beforeClass" finished-at="2022-03-04T13:43:59Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:project.NewTest2@11fc564b]" started-at="2022-03-04T13:43:59Z" name="beforeMethod" finished-at="2022-03-04T13:43:59Z" duration-ms="1" status="PASS">
+    <test started-at="2022-03-07T13:39:15Z" name="RegressionTest" finished-at="2022-03-07T13:40:31Z" duration-ms="75188">
+      <class name="project.RadioButton1">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:project.RadioButton1@186f8716]" started-at="2022-03-07T13:39:15Z" name="beforeMethod" finished-at="2022-03-07T13:39:35Z" duration-ms="19860" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="f()[pri:1, instance:project.NewTest2@11fc564b]" started-at="2022-03-04T13:43:59Z" name="f" finished-at="2022-03-04T13:43:59Z" duration-ms="10" status="PASS">
+        <test-method signature="radioButtonTest()[pri:0, instance:project.RadioButton1@186f8716]" started-at="2022-03-07T13:39:35Z" name="radioButtonTest" finished-at="2022-03-07T13:39:37Z" duration-ms="1515" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:project.NewTest2@11fc564b]" started-at="2022-03-04T13:43:59Z" name="afterMethod" finished-at="2022-03-04T13:43:59Z" duration-ms="3" status="PASS">
+        </test-method> <!-- radioButtonTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:project.RadioButton1@186f8716]" started-at="2022-03-07T13:39:37Z" name="afterMethod" finished-at="2022-03-07T13:39:40Z" duration-ms="2729" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:project.NewTest2@11fc564b]" started-at="2022-03-04T13:43:59Z" name="beforeMethod" finished-at="2022-03-04T13:43:59Z" duration-ms="0" status="PASS">
+      </class> <!-- project.RadioButton1 -->
+      <class name="project.CheckBox1">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:project.CheckBox1@11c9af63]" started-at="2022-03-07T13:40:16Z" name="beforeMethod" finished-at="2022-03-07T13:40:29Z" duration-ms="12886" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="z()[pri:3, instance:project.NewTest2@11fc564b]" started-at="2022-03-04T13:43:59Z" name="z" finished-at="2022-03-04T13:43:59Z" duration-ms="6" status="PASS">
+        <test-method signature="checkboxTest()[pri:0, instance:project.CheckBox1@11c9af63]" started-at="2022-03-07T13:40:29Z" name="checkboxTest" finished-at="2022-03-07T13:40:29Z" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- z -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:project.NewTest2@11fc564b]" started-at="2022-03-04T13:43:59Z" name="afterMethod" finished-at="2022-03-04T13:43:59Z" duration-ms="4" status="PASS">
+        </test-method> <!-- checkboxTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:project.CheckBox1@11c9af63]" started-at="2022-03-07T13:40:29Z" name="afterMethod" finished-at="2022-03-07T13:40:31Z" duration-ms="1654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:project.NewTest2@11fc564b]" started-at="2022-03-04T13:43:59Z" name="afterClass" finished-at="2022-03-04T13:43:59Z" duration-ms="1" status="PASS">
+      </class> <!-- project.CheckBox1 -->
+      <class name="project.LinksTesting1">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:project.LinksTesting1@45ca843]" started-at="2022-03-07T13:40:04Z" name="setup" finished-at="2022-03-07T13:40:12Z" duration-ms="7919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:project.NewTest2@11fc564b]" started-at="2022-03-04T13:43:59Z" name="afterTest" finished-at="2022-03-04T13:43:59Z" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="linktesting1()[pri:0, instance:project.LinksTesting1@45ca843]" started-at="2022-03-07T13:40:12Z" name="linktesting1" finished-at="2022-03-07T13:40:14Z" duration-ms="1672" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Image Link]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- linktesting1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:project.LinksTesting1@45ca843]" started-at="2022-03-07T13:40:14Z" name="tearDown" finished-at="2022-03-07T13:40:16Z" duration-ms="2017" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:project.NewTest2@11fc564b]" started-at="2022-03-04T13:43:59Z" name="afterSuite" finished-at="2022-03-04T13:43:59Z" duration-ms="1" status="PASS">
+        </test-method> <!-- tearDown -->
+      </class> <!-- project.LinksTesting1 -->
+      <class name="project.TNG_001">
+        <test-method is-config="true" signature="startprocess(java.lang.String)[pri:0, instance:project.TNG_001@1d8bd0de]" started-at="2022-03-07T13:39:40Z" name="startprocess" finished-at="2022-03-07T13:39:53Z" duration-ms="13478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- project.NewTest2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- startprocess -->
+        <test-method signature="amazon()[pri:0, instance:project.TNG_001@1d8bd0de]" started-at="2022-03-07T13:39:53Z" name="amazon" finished-at="2022-03-07T13:40:02Z" duration-ms="9244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazon -->
+        <test-method is-config="true" signature="endProcess()[pri:0, instance:project.TNG_001@1d8bd0de]" started-at="2022-03-07T13:40:02Z" name="endProcess" finished-at="2022-03-07T13:40:04Z" duration-ms="1941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+      </class> <!-- project.TNG_001 -->
+    </test> <!-- RegressionTest -->
+  </suite> <!-- RegressionSuite -->
 </testng-results>
