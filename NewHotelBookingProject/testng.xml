@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="BookingSuite">
   <test thread-count="5" name="Cretate New Booking Test - pay@hotel">
   <parameter name="action" value="pay@hotel"></parameter>
     <classes>
@@ -27,7 +27,7 @@
   </test> <!-- Test -->
   
   
-  <test thread-count="5" name="Cretate New Booking Test - electronic media">
+  <!--  <test thread-count="5" name="Cretate New Booking Test - electronic media">
   <parameter name="action" value="electronic media"></parameter>
     <classes>
       <class name="testcasses.BookingSearch">
@@ -50,5 +50,5 @@
 	      </methods>
       </class>
     </classes>
-  </test><!-- Test -->
+  </test>--><!-- Test -->
 </suite> <!-- Suite -->
