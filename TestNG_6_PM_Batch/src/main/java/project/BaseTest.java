@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Date;
 import java.util.Properties;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -49,6 +51,8 @@ public class BaseTest
 	
 	public static void init() throws Exception
 	{
+		
+		
 		fis = new FileInputStream(projectPath+"/src/main/resources/data.properties");
 		p = new Properties();
 		p.load(fis);
@@ -64,7 +68,7 @@ public class BaseTest
 		fis = new FileInputStream(projectPath+"/src/main/resources/"+e+".properties");
 		childProp = new Properties();
 		childProp.load(fis);
-		String value = childProp.getProperty("amazonurl");
+		String value = childProp.getProperty("practiceurl");
 		System.out.println(value);
 		
 		fis = new FileInputStream(projectPath+"/src/main/resources/or.properties");
@@ -75,11 +79,12 @@ public class BaseTest
 		PropertyConfigurator.configure(fis);
 		
 		rep = ExtentManager.getInstance();
+		
 	}
 	
 	public static void launcher(String browser)
 	{
-		if(browser.equals("chrome")) {
+		if(p.getProperty(browser).equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions option = new  ChromeOptions();
 			option.addArguments("user-data-dir=C:\\Users\\ravi\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 11");
@@ -89,7 +94,7 @@ public class BaseTest
 			//option.addArguments("--proxy-server=https://192.168.10.1:9090");
 			
 			driver = new ChromeDriver(option);
-		}else if(browser.equals("firefox")) {
+		}else if(p.getProperty(browser).equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			
 			ProfilesIni p = new ProfilesIni();
@@ -113,7 +118,10 @@ public class BaseTest
 			profile.setPreference("network.proxy.socks_port", 1744);
 			
 			driver = new FirefoxDriver(option);
+			
+			
 		}
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
 	
 	public static void navigateUrl(String url)
@@ -262,5 +270,13 @@ public class BaseTest
 		
 		test.log(Status.INFO, "Screenshot --->" +test.addScreenCaptureFromPath(projectPath+"//failurescreenshots//"+dateFormat));
 	}
+	
+	public int randomNum() 
+	{
+		Random r = new Random();
+		int ran = r.nextInt(99999);
+		return ran;
+	}
+	
 
 }

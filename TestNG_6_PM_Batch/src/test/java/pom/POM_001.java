@@ -1,34 +1,38 @@
 package pom;
 
-import org.testng.annotations.Test;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-import org.testng.annotations.BeforeMethod;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-public class POM_001
+import project.BaseTest;
+
+public class POM_001 extends BaseTest
 {
-	WebDriver driver;
+	
 	
   @BeforeMethod
-  public void startProcess() 
+  public void startProcess() throws Exception 
   {
-	  WebDriverManager.chromedriver().setup();
-	  driver = new ChromeDriver();
-	  driver.manage().window().maximize();
-	  driver.get("http://automationpractice.com/index.php");
+	  init();
+	  launcher("chromebrowser");
+	  navigateUrl("practiceurl");
   }
   
-  @Test
+  @Test(enabled = false)
   public void login() 
   {
 	  LoginPage page = new LoginPage(driver);
 	  page.customerLogin();
 	  Assert.assertEquals(page.verifyError(), "Authentication failed.");
+  }
+  
+  @Test
+  public void customerRegistration() throws Exception
+  {
+	 
+	  CustomerRegistrationPage page = new CustomerRegistrationPage(driver);
+	  page.customerRegistration();
   }
 
   @AfterMethod

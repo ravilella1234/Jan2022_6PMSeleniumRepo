@@ -6,7 +6,7 @@
       <class name="pom.POM_001">
         <methods>
           <include name="endProcess"/>
-          <include name="login"/>
+          <include name="customerRegistration"/>
           <include name="startProcess"/>
         </methods>
       </class> <!-- pom.POM_001 -->
