@@ -1,0 +1,31 @@
+
+What is a Framework?
+A framework is a platform that has all the tools, libraires organized and set in a defined structure to enable autimation Testing eaiser.
+
+
+Why Automation Framework is Required?
+
+1) To organize all the test artifacts in a single location
+2) Eassy to Mantainence
+3) Reusabilty
+4) Code Optimization
+
+1) Generic Libraries
+	- openBrowser
+	- navigate
+	- click
+	- type
+	- select
+	- getText
+
+2) Application Dependent Libraries
+ 	- Login
+	- selectDateformCalander
+
+3) Validation Libraries
+	- validateTitle
+	- validateText
+	- validateElementVisible
+
+https://money.rediff.com/index.html
+
