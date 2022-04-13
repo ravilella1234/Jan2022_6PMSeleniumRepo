@@ -17,20 +17,5 @@
     </classes>
   </test> <!-- Test -->
   
-  <test thread-count="5" name="DeletePortifolioTest">
-    <classes>
-      <class name="testcases.Session">
-      	<methods>
-      		<include name="doLogin"></include>
-      	</methods>
-      </class>
-      
-      <class name="testcases.PortifolioManagement">
-      	<methods>
-      		<include name="deletePortifolio"></include>
-      	</methods>
-      </class>
-    </classes>
-  </test> <!-- Test -->
-  
+    
 </suite> <!-- Suite -->
