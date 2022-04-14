@@ -8,18 +8,20 @@ public class Session extends BaseTest
   @Test
   public void doLogin() 
   {
-	  System.out.println("doLogin");
+	 // test.log(Status.INFO, "Logging In....");
+	  app.log("Logging In....");
 	  app.openBrowser("chromebrowser");
 	  app.navigate("rediffurl");
-	  //app.click("signin_linktext");
-	 // app.type("useremail_id", "rediffuser");
-	 // app.type("userpassword_id", "rediffpassword");
-	 // app.click("submit_id");
+	  app.click("signin_linktext");
+	  app.type("useremail_id", "rediffuser");
+	  app.type("userpassword_id", "rediffpassword");
+	  app.click("submit_id");
   }
   
   @Test
   public void doLogout() 
   {
-	  System.out.println("doLogout");
+	  //test.log(Status.INFO, "Logging Out....");
+	  app.log("Logging Out....");
   }
 }
