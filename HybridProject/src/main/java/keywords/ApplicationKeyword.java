@@ -4,6 +4,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Properties;
 
+import org.testng.asserts.SoftAssert;
+
 public class ApplicationKeyword extends ValidationKeyword
 {
 	
@@ -29,6 +31,8 @@ public class ApplicationKeyword extends ValidationKeyword
 		{
 			e.printStackTrace();
 		}
+		
+		softAssert = new SoftAssert();
 	}
 
 	public void login()

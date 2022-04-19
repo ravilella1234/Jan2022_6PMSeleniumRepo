@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CreatePortifolioTest(failed)">
+    <classes>
+      <class name="testcases.PortifolioManagement">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="quit"/>
+          <include name="createPortifolio"/>
+        </methods>
+      </class> <!-- testcases.PortifolioManagement -->
+      <class name="testcases.Session">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="doLogin"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- testcases.Session -->
+    </classes>
+  </test> <!-- CreatePortifolioTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

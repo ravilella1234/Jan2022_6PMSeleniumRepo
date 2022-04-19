@@ -1,20 +1,29 @@
 package keywords;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Date;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import reportings.ExtentManager;
 
 public class GenericKeyword 
 {
@@ -25,6 +34,7 @@ public class GenericKeyword
 	public Properties childProp;
 	public Properties orProp;
 	public ExtentTest test;
+	public SoftAssert softAssert;
 
 	public void openBrowser(String browserName)
 	{
@@ -133,6 +143,45 @@ public class GenericKeyword
 	public void log(String msg)
 	{
 		test.log(Status.INFO, msg);
+	}
+	
+	//Reporting Failure
+	public void reportFailure(String failureMg,boolean stopOnFailure)
+	{
+		softAssert.fail(failureMg); // failure in TestNG Reports
+		test.log(Status.FAIL, failureMg); // failure in Extent Reports
+		takeScreenShot();
+		
+		if(stopOnFailure)
+			assertAll();
+	}
+	
+	public void assertAll()
+	{
+		Reporter.getCurrentTestResult().getTestContext().setAttribute("criticalFailure", "Y");
+		softAssert.assertAll();
+	}
+	
+	public void takeScreenShot()
+	{
+		// fileName of the screenshot
+		Date d=new Date();
+		String screenshotFile=d.toString().replace(":", "_").replace(" ", "_")+".png";
+		// take screenshot
+		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		try 
+		{
+			// get the dynamic folder name
+			FileUtils.copyFile(srcFile, new File(ExtentManager.screenshotFolderPath+"//"+screenshotFile));
+			//put screenshot file in reports
+			test.log(Status.INFO,"Screenshot-> "+ test.addScreenCaptureFromPath(ExtentManager.screenshotFolderPath+"//"+screenshotFile));
+		} 
+		catch (IOException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 	
 }

@@ -17,7 +17,7 @@ public class ValidationKeyword extends GenericKeyword
 		
 	 public void validateElementVisible()
 	 {
-		 
+		 // report failure
 	 }
 
 }

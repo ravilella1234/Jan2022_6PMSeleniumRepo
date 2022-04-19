@@ -1,56 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="7" passed="2" failed="0" skipped="0">
+<testng-results ignored="5" total="7" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-14T12:33:41Z" name="Suite" finished-at="2022-04-14T12:34:09Z" duration-ms="28721">
+  <suite started-at="2022-04-19T12:38:29Z" name="Suite" finished-at="2022-04-19T12:39:07Z" duration-ms="37583">
     <groups>
     </groups>
-    <test started-at="2022-04-14T12:33:41Z" name="CreatePortifolioTest" finished-at="2022-04-14T12:34:09Z" duration-ms="28721">
+    <test started-at="2022-04-19T12:38:29Z" name="CreatePortifolioTest" finished-at="2022-04-19T12:39:07Z" duration-ms="37583">
       <class name="testcases.PortifolioManagement">
-        <test-method is-config="true" signature="BeforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.PortifolioManagement@1d8bd0de]" started-at="2022-04-14T12:34:07Z" name="BeforeMethod" finished-at="2022-04-14T12:34:07Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.PortifolioManagement@45ca843]" started-at="2022-04-19T12:39:05Z" name="BeforeMethod" finished-at="2022-04-19T12:39:05Z" duration-ms="5" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@ac20bb4]]>
+                <![CDATA[org.testng.TestRunner@7e7f0f0a]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Critical Failure in Previou Tests]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Critical Failure in Previou Tests
+at testcases.BaseTest.BeforeMethod(BaseTest.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="createPortifolio()[pri:0, instance:testcases.PortifolioManagement@1d8bd0de]" started-at="2022-04-14T12:34:07Z" name="createPortifolio" finished-at="2022-04-14T12:34:07Z" duration-ms="2" status="PASS">
+        <test-method signature="createPortifolio()[pri:0, instance:testcases.PortifolioManagement@45ca843]" started-at="2022-04-19T12:39:05Z" name="createPortifolio" finished-at="2022-04-19T12:39:05Z" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Critical Failure in Previou Tests]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Critical Failure in Previou Tests
+at testcases.BaseTest.BeforeMethod(BaseTest.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPortifolio -->
       </class> <!-- testcases.PortifolioManagement -->
       <class name="testcases.Session">
-        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testcases.Session@5ab9e72c]" started-at="2022-04-14T12:33:41Z" name="beforeTest" finished-at="2022-04-14T12:33:42Z" duration-ms="1086" status="PASS">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testcases.Session@186f8716]" started-at="2022-04-19T12:38:29Z" name="beforeTest" finished-at="2022-04-19T12:38:30Z" duration-ms="1146" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@ac20bb4]]>
+                <![CDATA[org.testng.TestRunner@7e7f0f0a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="doLogin()[pri:0, instance:testcases.Session@5ab9e72c]" started-at="2022-04-14T12:33:42Z" name="doLogin" finished-at="2022-04-14T12:34:07Z" duration-ms="25333" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLogin -->
-        <test-method is-config="true" signature="BeforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.Session@5ab9e72c]" started-at="2022-04-14T12:33:42Z" name="BeforeMethod" finished-at="2022-04-14T12:33:42Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.Session@186f8716]" started-at="2022-04-19T12:38:30Z" name="BeforeMethod" finished-at="2022-04-19T12:38:30Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@ac20bb4]]>
+                <![CDATA[org.testng.TestRunner@7e7f0f0a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.Session@5ab9e72c]" started-at="2022-04-14T12:34:07Z" name="quit" finished-at="2022-04-14T12:34:09Z" duration-ms="2255" status="PASS">
+        <test-method signature="doLogin()[pri:0, instance:testcases.Session@186f8716]" started-at="2022-04-19T12:38:30Z" name="doLogin" finished-at="2022-04-19T12:39:05Z" duration-ms="34492" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Test is Incorrect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Test is Incorrect
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at keywords.GenericKeyword.assertAll(GenericKeyword.java:162)
+at keywords.GenericKeyword.reportFailure(GenericKeyword.java:156)
+at testcases.Session.doLogin(Session.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.Session@186f8716]" started-at="2022-04-19T12:39:05Z" name="quit" finished-at="2022-04-19T12:39:07Z" duration-ms="1837" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
