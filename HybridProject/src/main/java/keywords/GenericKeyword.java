@@ -112,6 +112,9 @@ public class GenericKeyword
 		return by;		
 	}
 
+	public String getText(String locatorKey) {
+		return getElement(locatorKey).getText();
+	}
 
 	public void click(String locatorKey)
 	{
@@ -267,10 +270,12 @@ public class GenericKeyword
 	{
 		WebElement table = getElement(tableLocator);
 		List<WebElement> rows = table.findElements(By.tagName("tr"));
-		for(int rNum=0;rNum<rows.size();rNum++) {
+		for(int rNum=0;rNum<rows.size();rNum++) 
+		{
 			WebElement row = rows.get(rNum);
 			List<WebElement> cells = row.findElements(By.tagName("td"));
-			for(int cNum=0;cNum<cells.size();cNum++) {
+			for(int cNum=0;cNum<cells.size();cNum++) 
+			{
 				WebElement cell = cells.get(cNum);
 				System.out.println("Text "+ cell.getText());
 				if(!cell.getText().trim().equals(""))

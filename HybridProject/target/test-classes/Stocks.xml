@@ -6,6 +6,7 @@
   <listeners>
 	<listener class-name="listener.MyTestNGListener"></listener>
   </listeners>
+  
  <test name="Add New Stock Test">
      <parameter name="action" value="addstock" />
     <classes>
@@ -24,6 +25,8 @@
       </class>
     </classes>
   </test>
+  
+  
   <test name="Modify Stock Test - Sell Stock">
      <parameter name="action" value="sellstock" />
     <classes>
@@ -43,6 +46,8 @@
       </class>
     </classes>
   </test>
+  
+  
    <test name="Modify Stock Test - Add Stock">
      <parameter name="action" value="addstock" />
     <classes>

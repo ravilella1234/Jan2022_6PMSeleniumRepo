@@ -11,12 +11,17 @@ public class StockManagement extends BaseTest
 			@Test
 			public void addNewStock(ITestContext context) 
 			{
+				String companyName = "Birla Corporation Ltd";
+				String selectionDate = "4-10-2021";
+				String stockQuantity="100";
+				String stockPrice="200";
+				
 				//JSONObject data = (JSONObject)context.getAttribute("data");
 				//String companyName = (String)data.get("stockname");
 				
-				String selectionDate= (String)data.get("date");// dd-MM-yyyy
-				String stockQuantity=(String)data.get("quantity");
-				String stockPrice=(String)data.get("price");
+				//String selectionDate= (String)data.get("date");// dd-MM-yyyy
+				//String stockQuantity=(String)data.get("quantity");
+				//String stockPrice=(String)data.get("price");
 				
 				app.log("Adding "+stockQuantity+" stocks of  "+ companyName);
 				// find quantity
@@ -43,7 +48,8 @@ public class StockManagement extends BaseTest
 			// sell or buy existing stock
 			@Parameters ({"action"})
 			@Test
-			public void modifyStock(String action,ITestContext context) {
+			public void modifyStock(String action,ITestContext context)
+			{
 				String companyName = "Birla Corporation Ltd";
 				String selectionDate="14-12-2020";
 				String stockQuantity="100";
@@ -71,7 +77,8 @@ public class StockManagement extends BaseTest
 			
 			// checks if stock is present in the table
 			@Test
-			public void verifyStockPresent() {
+			public void verifyStockPresent() 
+			{
 				String companyName = "Birla Corporation Ltd";
 				int row = app.getRowNumWithCellData("stocktable_css", companyName);
 				if(row ==-1)
