@@ -91,7 +91,8 @@ public class StockManagement extends BaseTest
 			// checks the stock quantity
 			@Parameters ({"action"})
 			@Test
-			public void verifyStockQuantity(String action, ITestContext context) {
+			public void verifyStockQuantity(String action, ITestContext context) 
+			{
 				String companyName = "Birla Corporation Ltd";
 				String selectionDate="14-12-2020";
 				String stockQuantity="100";
@@ -128,7 +129,8 @@ public class StockManagement extends BaseTest
 			// verifies the transaction history
 			@Parameters ({"action"})
 			@Test
-			public void verifyTransactionHistory(String action) {
+			public void verifyTransactionHistory(String action) 
+			{
 				String companyName = "Birla Corporation Ltd";
 				String selectionDate="14-12-2020";
 				String stockQuantity="100";

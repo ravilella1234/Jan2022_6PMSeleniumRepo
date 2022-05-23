@@ -79,7 +79,7 @@ public class GenericKeyword
 	{
 		//test.log(Status.INFO, "Checking the Element Presence :" + locatorKey);
 		log("Checking the Element Presence :" + locatorKey);
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		
 		try {
 			wait.until(ExpectedConditions.presenceOfElementLocated(getLocator(locatorKey)));
@@ -94,19 +94,19 @@ public class GenericKeyword
 		By by=null;
 		
 		if(locatorKey.endsWith("_id")) {
-			by = By.id(orProp.getProperty(locatorKey));
+			by = By.id(mainProp.getProperty(locatorKey));
 		}else if(locatorKey.endsWith("_name")) {
-			by = By.name(orProp.getProperty(locatorKey));
+			by = By.name(mainProp.getProperty(locatorKey));
 		}else if(locatorKey.endsWith("_classname")) {
-			by = By.className(orProp.getProperty(locatorKey));
+			by = By.className(mainProp.getProperty(locatorKey));
 		}else if(locatorKey.endsWith("_linktext")) {
-			by = By.linkText(orProp.getProperty(locatorKey));
+			by = By.linkText(mainProp.getProperty(locatorKey));
 		}else if(locatorKey.endsWith("_partiallinktext")) {
-			by = By.partialLinkText(orProp.getProperty(locatorKey));
+			by = By.partialLinkText(mainProp.getProperty(locatorKey));
 		}else if(locatorKey.endsWith("_xpath")) {
-			by = By.xpath(orProp.getProperty(locatorKey));
+			by = By.xpath(mainProp.getProperty(locatorKey));
 		}else if(locatorKey.endsWith("_css")) {
-			by = By.cssSelector(orProp.getProperty(locatorKey));
+			by = By.cssSelector(mainProp.getProperty(locatorKey));
 		}
 		
 		return by;		

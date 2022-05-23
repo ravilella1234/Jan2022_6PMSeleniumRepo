@@ -1,109 +1,303 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="6" total="11" passed="1" failed="2" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-20T12:14:53Z" name="Default suite" finished-at="2022-04-20T12:14:54Z" duration-ms="241">
+  <suite started-at="2022-05-23T11:31:03Z" name="Stock Management" finished-at="2022-05-23T11:31:21Z" duration-ms="18251">
     <groups>
     </groups>
-    <test started-at="2022-04-20T12:14:53Z" name="Default test" finished-at="2022-04-20T12:14:54Z" duration-ms="241">
-      <class name="testcases.NewTest">
-        <test-method signature="f(java.lang.Integer, java.lang.String)[pri:0, instance:testcases.NewTest@21b2e768]" started-at="2022-04-20T12:14:53Z" name="f" data-provider="dp" finished-at="2022-04-20T12:14:53Z" duration-ms="47" status="PASS">
+    <test started-at="2022-05-23T11:31:03Z" name="Add New Stock Test" finished-at="2022-05-23T11:31:21Z" duration-ms="18251">
+      <class name="testcases.PortifolioManagement">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testcases.PortifolioManagement@1984b1f]" started-at="2022-05-23T11:31:03Z" name="beforeTest" finished-at="2022-05-23T11:31:17Z" duration-ms="14331" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ravi]]>
+                <![CDATA[org.testng.TestRunner@9b9a327]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="f(java.lang.Integer, java.lang.String)[pri:0, instance:testcases.NewTest@21b2e768]" started-at="2022-04-20T12:14:53Z" name="f" data-provider="dp" finished-at="2022-04-20T12:14:53Z" duration-ms="11" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="BeforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.PortifolioManagement@1984b1f]" started-at="2022-05-23T11:31:17Z" name="BeforeMethod" finished-at="2022-05-23T11:31:17Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[30]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sai]]>
+                <![CDATA[org.testng.TestRunner@9b9a327]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="f(java.lang.Integer, java.lang.String)[pri:0, instance:testcases.NewTest@21b2e768]" started-at="2022-04-20T12:14:53Z" name="f" data-provider="dp" finished-at="2022-04-20T12:14:53Z" duration-ms="5" status="PASS">
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="selectPortFolio(org.testng.ITestContext)[pri:0, instance:testcases.PortifolioManagement@1984b1f]" started-at="2022-05-23T11:31:17Z" name="selectPortFolio" finished-at="2022-05-23T11:31:19Z" duration-ms="1579" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[50]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[kiran]]>
+                <![CDATA[org.testng.TestRunner@9b9a327]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="g(java.lang.Integer, java.lang.String)[pri:0, instance:testcases.NewTest@21b2e768]" started-at="2022-04-20T12:14:53Z" name="g" data-provider="dp" finished-at="2022-04-20T12:14:53Z" duration-ms="3" status="PASS">
+        </test-method> <!-- selectPortFolio -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.PortifolioManagement@1984b1f]" started-at="2022-05-23T11:31:20Z" name="quit" finished-at="2022-05-23T11:31:21Z" duration-ms="883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testcases.PortifolioManagement -->
+      <class name="testcases.StockManagement">
+        <test-method is-config="true" signature="BeforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.StockManagement@39ac0c0a]" started-at="2022-05-23T11:31:19Z" name="BeforeMethod" finished-at="2022-05-23T11:31:19Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ravi]]>
+                <![CDATA[org.testng.TestRunner@9b9a327]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- g -->
-        <test-method signature="g(java.lang.Integer, java.lang.String)[pri:0, instance:testcases.NewTest@21b2e768]" started-at="2022-04-20T12:14:53Z" name="g" data-provider="dp" finished-at="2022-04-20T12:14:53Z" duration-ms="16" status="PASS">
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="addNewStock(org.testng.ITestContext)[pri:0, instance:testcases.StockManagement@39ac0c0a]" started-at="2022-05-23T11:31:19Z" name="addNewStock" finished-at="2022-05-23T11:31:20Z" duration-ms="1059" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[30]]>
+                <![CDATA[org.testng.TestRunner@9b9a327]]>
               </value>
             </param>
-            <param index="1">
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:92)
+at keywords.GenericKeyword.type(GenericKeyword.java:126)
+at testcases.StockManagement.addNewStock(StockManagement.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewStock -->
+        <test-method is-config="true" signature="BeforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.StockManagement@39ac0c0a]" started-at="2022-05-23T11:31:20Z" name="BeforeMethod" finished-at="2022-05-23T11:31:20Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[sai]]>
+                <![CDATA[org.testng.TestRunner@9b9a327]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- g -->
-        <test-method signature="g(java.lang.Integer, java.lang.String)[pri:0, instance:testcases.NewTest@21b2e768]" started-at="2022-04-20T12:14:54Z" name="g" data-provider="dp" finished-at="2022-04-20T12:14:54Z" duration-ms="9" status="PASS">
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="verifyStockPresent()[pri:0, instance:testcases.StockManagement@39ac0c0a]" started-at="2022-05-23T11:31:20Z" name="verifyStockPresent" finished-at="2022-05-23T11:31:20Z" duration-ms="336" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Stock Not present Birla Corporation Ltd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Stock Not present Birla Corporation Ltd
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at keywords.GenericKeyword.assertAll(GenericKeyword.java:185)
+at keywords.GenericKeyword.reportFailure(GenericKeyword.java:179)
+at testcases.StockManagement.verifyStockPresent(StockManagement.java:85)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStockPresent -->
+        <test-method is-config="true" signature="BeforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.StockManagement@39ac0c0a]" started-at="2022-05-23T11:31:20Z" name="BeforeMethod" finished-at="2022-05-23T11:31:20Z" duration-ms="1" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[50]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[kiran]]>
+                <![CDATA[org.testng.TestRunner@9b9a327]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Critical Failure in Previou Tests]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Critical Failure in Previou Tests
+at testcases.BaseTest.BeforeMethod(BaseTest.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- g -->
-      </class> <!-- testcases.NewTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="verifyStockQuantity(java.lang.String, org.testng.ITestContext)[pri:0, instance:testcases.StockManagement@39ac0c0a]" started-at="2022-05-23T11:31:20Z" name="verifyStockQuantity" finished-at="2022-05-23T11:31:20Z" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Critical Failure in Previou Tests]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Critical Failure in Previou Tests
+at testcases.BaseTest.BeforeMethod(BaseTest.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStockQuantity -->
+        <test-method is-config="true" signature="BeforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.StockManagement@39ac0c0a]" started-at="2022-05-23T11:31:20Z" name="BeforeMethod" finished-at="2022-05-23T11:31:20Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="verifyTransactionHistory(java.lang.String)[pri:0, instance:testcases.StockManagement@39ac0c0a]" started-at="2022-05-23T11:31:20Z" name="verifyTransactionHistory" finished-at="2022-05-23T11:31:20Z" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Critical Failure in Previou Tests]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Critical Failure in Previou Tests
+at testcases.BaseTest.BeforeMethod(BaseTest.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTransactionHistory -->
+      </class> <!-- testcases.StockManagement -->
+    </test> <!-- Add New Stock Test -->
+  </suite> <!-- Stock Management -->
 </testng-results>

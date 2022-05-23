@@ -64,16 +64,11 @@ public class ApplicationKeyword extends ValidationKeyword
 	}
 
 	
-	public void verifyStockAdded() 
-	{
-		
-	}
-	
 	public void defaultLogin() 
 	{
-		navigate("url");
-		type("username_css", childProp.getProperty("admin_user_name"));
-		type("password_xpath", childProp.getProperty("admin_password"));
+		navigate("rediffurl");
+		type("username_css", "rediffuser");
+		type("password_xpath", "rediffpassword");
 		click("login_submit_id");
 		waitForPageToLoad();
 		wait(5);

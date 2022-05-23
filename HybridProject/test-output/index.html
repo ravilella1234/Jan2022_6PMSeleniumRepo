@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Stock_Management" class="navigator-link">
+              <span class="suite-name border-failed">Stock Management</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ravi\AppData\Local\Temp\testng-eclipse--540307821\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Stock_Management" class="navigator-link ">
+                    <span>D:\jan2022WD\HybridProject\src\test\resources\Stocks.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Stock_Management" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Stock_Management" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Stock_Management" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Stock_Management" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Stock_Management" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Stock_Management" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,46 +91,59 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,  2 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Stock_Management" class="hide-methods failed suite-Stock_Management"> (hide)</a> <!-- hide-methods failed suite-Stock_Management -->
+                      <a href="#" panel-name="suite-Stock_Management" class="show-methods failed suite-Stock_Management"> (show)</a> <!-- show-methods failed suite-Stock_Management -->
+                    </span>
+                    <div class="method-list-content failed suite-Stock_Management">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Stock_Management" title="testcases.StockManagement" class="method navigator-link" hash-for-method="addNewStock(org.testng.TestRunner@9b9a327)">addNewStock(org.testng.TestRunner@9b9a327)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Stock_Management" title="testcases.StockManagement" class="method navigator-link" hash-for-method="verifyStockPresent">verifyStockPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Stock_Management -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Stock_Management" class="hide-methods skipped suite-Stock_Management"> (hide)</a> <!-- hide-methods skipped suite-Stock_Management -->
+                      <a href="#" panel-name="suite-Stock_Management" class="show-methods skipped suite-Stock_Management"> (show)</a> <!-- show-methods skipped suite-Stock_Management -->
+                    </span>
+                    <div class="method-list-content skipped suite-Stock_Management">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Stock_Management" title="testcases.StockManagement" class="method navigator-link" hash-for-method="verifyStockQuantity">verifyStockQuantity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Stock_Management" title="testcases.StockManagement" class="method navigator-link" hash-for-method="verifyTransactionHistory">verifyTransactionHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Stock_Management -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Stock_Management" class="hide-methods passed suite-Stock_Management"> (hide)</a> <!-- hide-methods passed suite-Stock_Management -->
+                      <a href="#" panel-name="suite-Stock_Management" class="show-methods passed suite-Stock_Management"> (show)</a> <!-- show-methods passed suite-Stock_Management -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Stock_Management">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.NewTest" class="method navigator-link" hash-for-method="f(30, sai)">f(30, sai)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Stock_Management" title="testcases.PortifolioManagement" class="method navigator-link" hash-for-method="selectPortFolio(org.testng.TestRunner@9b9a327)">selectPortFolio(org.testng.TestRunner@9b9a327)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.NewTest" class="method navigator-link" hash-for-method="f(10, ravi)">f(10, ravi)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.NewTest" class="method navigator-link" hash-for-method="f(50, kiran)">f(50, kiran)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.NewTest" class="method navigator-link" hash-for-method="g(30, sai)">g(30, sai)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.NewTest" class="method navigator-link" hash-for-method="g(50, kiran)">g(50, kiran)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.NewTest" class="method navigator-link" hash-for-method="g(10, ravi)">g(10, ravi)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Stock_Management -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -141,194 +154,287 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Stock_Management" class="panel Stock_Management">
+          <div class="suite-Stock_Management-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.NewTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">testcases.StockManagement</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="f(30, sai)">
-                  </a> <!-- f(30, sai) -->
-                  <span class="method-name">f</span>
-                  <span class="parameters">(30, sai)</span>
+                  <a name="addNewStock(org.testng.TestRunner@9b9a327)">
+                  </a> <!-- addNewStock(org.testng.TestRunner@9b9a327) -->
+                  <span class="method-name">addNewStock</span>
+                  <span class="parameters">(org.testng.TestRunner@9b9a327)</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:92)
+	at keywords.GenericKeyword.type(GenericKeyword.java:126)
+	at testcases.StockManagement.addNewStock(StockManagement.java:33)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="f(10, ravi)">
-                  </a> <!-- f(10, ravi) -->
-                  <span class="method-name">f</span>
-                  <span class="parameters">(10, ravi)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="f(50, kiran)">
-                  </a> <!-- f(50, kiran) -->
-                  <span class="method-name">f</span>
-                  <span class="parameters">(50, kiran)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="g(30, sai)">
-                  </a> <!-- g(30, sai) -->
-                  <span class="method-name">g</span>
-                  <span class="parameters">(30, sai)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="g(50, kiran)">
-                  </a> <!-- g(50, kiran) -->
-                  <span class="method-name">g</span>
-                  <span class="parameters">(50, kiran)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="g(10, ravi)">
-                  </a> <!-- g(10, ravi) -->
-                  <span class="method-name">g</span>
-                  <span class="parameters">(10, ravi)</span>
+                  <a name="verifyStockPresent">
+                  </a> <!-- verifyStockPresent -->
+                  <span class="method-name">verifyStockPresent</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Stock Not present Birla Corporation Ltd
+	at keywords.GenericKeyword.assertAll(GenericKeyword.java:185)
+	at keywords.GenericKeyword.reportFailure(GenericKeyword.java:179)
+	at testcases.StockManagement.verifyStockPresent(StockManagement.java:85)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Stock_Management-class-failed -->
+          <div class="suite-Stock_Management-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.StockManagement</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStockQuantity">
+                  </a> <!-- verifyStockQuantity -->
+                  <span class="method-name">verifyStockQuantity</span>
+                  <div class="stack-trace">org.testng.SkipException: Critical Failure in Previou Tests
+	at testcases.BaseTest.BeforeMethod(BaseTest.java:54)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTransactionHistory">
+                  </a> <!-- verifyTransactionHistory -->
+                  <span class="method-name">verifyTransactionHistory</span>
+                  <div class="stack-trace">org.testng.SkipException: Critical Failure in Previou Tests
+	at testcases.BaseTest.BeforeMethod(BaseTest.java:54)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Stock_Management-class-skipped -->
+          <div class="suite-Stock_Management-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.PortifolioManagement</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectPortFolio(org.testng.TestRunner@9b9a327)">
+                  </a> <!-- selectPortFolio(org.testng.TestRunner@9b9a327) -->
+                  <span class="method-name">selectPortFolio</span>
+                  <span class="parameters">(org.testng.TestRunner@9b9a327)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Stock_Management-class-passed -->
+        </div> <!-- panel Stock_Management -->
+        <div panel-name="test-xml-Stock_Management" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ravi\AppData\Local\Temp\testng-eclipse--540307821\testng-customsuite.xml</span>
+            <span class="header-content">D:\jan2022WD\HybridProject\src\test\resources\Stocks.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Stock Management&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.MyTestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Add New Stock Test&quot;&gt;
+    &lt;parameter name=&quot;action&quot; value=&quot;addstock&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.NewTest&quot;/&gt;
+      &lt;class name=&quot;testcases.PortifolioManagement&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;selectPortFolio&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.PortifolioManagement --&gt;
+      &lt;class name=&quot;testcases.StockManagement&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addNewStock&quot;/&gt;
+          &lt;include name=&quot;verifyStockPresent&quot;/&gt;
+          &lt;include name=&quot;verifyStockQuantity&quot;/&gt;
+          &lt;include name=&quot;verifyTransactionHistory&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcases.StockManagement --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Add New Stock Test --&gt;
+&lt;/suite&gt; &lt;!-- Stock Management --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Stock_Management" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Stock Management</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Add New Stock Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Stock_Management" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Stock Management</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Stock_Management" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Stock Management</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Stock_Management');
+function tableData_Stock_Management() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'f')
-data.setCell(0, 2, 'testcases.NewTest')
-data.setCell(0, 3, 47);
+data.setCell(0, 1, 'selectPortFolio')
+data.setCell(0, 2, 'testcases.PortifolioManagement')
+data.setCell(0, 3, 1579);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'g')
-data.setCell(1, 2, 'testcases.NewTest')
-data.setCell(1, 3, 16);
+data.setCell(1, 1, 'addNewStock')
+data.setCell(1, 2, 'testcases.StockManagement')
+data.setCell(1, 3, 1059);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'f')
-data.setCell(2, 2, 'testcases.NewTest')
-data.setCell(2, 3, 11);
+data.setCell(2, 1, 'verifyStockPresent')
+data.setCell(2, 2, 'testcases.StockManagement')
+data.setCell(2, 3, 336);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'g')
-data.setCell(3, 2, 'testcases.NewTest')
-data.setCell(3, 3, 9);
+data.setCell(3, 1, 'verifyTransactionHistory')
+data.setCell(3, 2, 'testcases.StockManagement')
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'f')
-data.setCell(4, 2, 'testcases.NewTest')
-data.setCell(4, 3, 5);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'g')
-data.setCell(5, 2, 'testcases.NewTest')
-data.setCell(5, 3, 3);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(4, 1, 'verifyStockQuantity')
+data.setCell(4, 2, 'testcases.StockManagement')
+data.setCell(4, 3, 0);
+window.suiteTableData['Stock_Management']= { tableData: data, tableDiv: 'times-div-Stock_Management'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 91 ms</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <div id="times-div-Stock_Management">
+              </div> <!-- times-div-Stock_Management -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Stock_Management" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Stock Management</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Stock_Management" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.StockManagement</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">modifyStock</span>
+                <br/>
+                <span class="ignored-method-name">verifyStockAvgBuyPrice</span>
+                <br/>
+                <span class="ignored-method-name">quit</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.PortifolioManagement</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">deletePortfolio</span>
+                <br/>
+                <span class="ignored-method-name">createPortfolio</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Stock_Management" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.NewTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">f(10, ravi)</span>
+              <div class="chronological-class-name">testcases.PortifolioManagement</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(org.testng.TestRunner@9b9a327)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(org.testng.TestRunner@9b9a327)</span>
+                <span class="method-start">14351 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">selectPortFolio(org.testng.TestRunner@9b9a327)</span>
+                <span class="method-start">14352 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.StockManagement</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(org.testng.TestRunner@9b9a327)</span>
+                <span class="method-start">15938 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addNewStock(org.testng.TestRunner@9b9a327)</span>
+                <span class="method-start">15939 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(org.testng.TestRunner@9b9a327)</span>
+                <span class="method-start">17002 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyStockPresent</span>
+                <span class="method-start">17003 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(org.testng.TestRunner@9b9a327)</span>
+                <span class="method-start">17347 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.PortifolioManagement</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">quit</span>
+                <span class="method-start">17363 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.StockManagement</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyStockQuantity</span>
+                <span class="method-start">-1653305463576 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">f(30, sai)</span>
-                <span class="method-start">56 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">f(50, kiran)</span>
-                <span class="method-start">71 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">g(10, ravi)</span>
-                <span class="method-start">86 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">g(30, sai)</span>
-                <span class="method-start">94 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">g(50, kiran)</span>
-                <span class="method-start">131 ms</span>
+                <span class="method-name">verifyTransactionHistory</span>
+                <span class="method-start">-1653305463576 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

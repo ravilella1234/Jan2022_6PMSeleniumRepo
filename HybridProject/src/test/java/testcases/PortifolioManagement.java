@@ -9,7 +9,7 @@ public class PortifolioManagement extends BaseTest
 	@Test
 	public void createPortfolio(ITestContext context) 
 	{
-		String portfolioName = "portfolio12345";
+		String portfolioName = "portfoli012345";
 		//JSONObject data = (JSONObject)context.getAttribute("data");
 		//String portfolioName=(String)data.get("portfolioname");
 		

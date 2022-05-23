@@ -8,16 +8,32 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">241</td><td></td><td></td></tr>
+<tr><th colspan="7">Stock Management</th></tr>
+<tr><td><a href="#t0">Add New Stock Test</a></td><td class="num">1</td><td class="num attn">2</td><td class="num attn">2</td><td class="num">18,251</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">testcases.NewTest</td><td><a href="#m0">f</a></td><td rowspan="3">1650456893941</td><td rowspan="3">11</td></tr><tr class="passedeven"><td><a href="#m1">f</a></td></tr><tr class="passedeven"><td><a href="#m2">f</a></td></tr><tr class="passedeven"><td><a href="#m3">g</a></td><td rowspan="3">1650456893979</td><td rowspan="3">16</td></tr><tr class="passedeven"><td><a href="#m4">g</a></td></tr><tr class="passedeven"><td><a href="#m5">g</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Stock Management</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Add New Stock Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testcases.StockManagement</td><td><a href="#m0">addNewStock</a></td><td rowspan="1">1653305479515</td><td rowspan="1">1059</td></tr><tr class="failedeven"><td><a href="#m1">verifyStockPresent</a></td><td rowspan="1">1653305480579</td><td rowspan="1">336</td></tr><tr><th colspan="4">Add New Stock Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">testcases.StockManagement</td><td><a href="#m2">BeforeMethod</a></td><td rowspan="2">1653305480923</td><td rowspan="2">1</td></tr><tr class="skippedeven"><td><a href="#m3">BeforeMethod</a></td></tr><tr><th colspan="4">Add New Stock Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">testcases.StockManagement</td><td><a href="#m4">verifyStockQuantity</a></td><td rowspan="1">1653305480927</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">verifyTransactionHistory</a></td><td rowspan="1">1653305480933</td><td rowspan="1">0</td></tr><tr><th colspan="4">Add New Stock Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.PortifolioManagement</td><td><a href="#m6">selectPortFolio</a></td><td rowspan="1">1653305477928</td><td rowspan="1">1579</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testcases.NewTest#f</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>30</td><td>sai</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.NewTest#f</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>10</td><td>ravi</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcases.NewTest#f</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>50</td><td>kiran</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcases.NewTest#g</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>30</td><td>sai</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testcases.NewTest#g</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>50</td><td>kiran</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testcases.NewTest#g</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>10</td><td>ravi</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Add New Stock Test</h2><h3 id="m0">testcases.StockManagement#addNewStock</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@9b9a327</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:92)
+	at keywords.GenericKeyword.type(GenericKeyword.java:126)
+	at testcases.StockManagement.addNewStock(StockManagement.java:33)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.StockManagement#verifyStockPresent</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Stock Not present Birla Corporation Ltd
+	at keywords.GenericKeyword.assertAll(GenericKeyword.java:185)
+	at keywords.GenericKeyword.reportFailure(GenericKeyword.java:179)
+	at testcases.StockManagement.verifyStockPresent(StockManagement.java:85)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.StockManagement#BeforeMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@9b9a327</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Critical Failure in Previou Tests
+	at testcases.BaseTest.BeforeMethod(BaseTest.java:54)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.StockManagement#BeforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.StockManagement#verifyStockQuantity</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Critical Failure in Previou Tests
+	at testcases.BaseTest.BeforeMethod(BaseTest.java:54)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.StockManagement#verifyTransactionHistory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Critical Failure in Previou Tests
+	at testcases.BaseTest.BeforeMethod(BaseTest.java:54)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcases.PortifolioManagement#selectPortFolio</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@9b9a327</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

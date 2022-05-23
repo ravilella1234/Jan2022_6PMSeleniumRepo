@@ -34,6 +34,9 @@ public class BaseTest
 		rep = ExtentManager.getReports();
 		test = rep.createTest(context.getCurrentXmlTest().getName());
 		app.setReport(test);
+		
+		app.openBrowser("chromebrowser");
+		app.defaultLogin();
 				
 		context.setAttribute("report", rep);
 		context.setAttribute("test", test);

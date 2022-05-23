@@ -4,18 +4,18 @@
     
     
   <listeners>
-	<listener class-name="listener.MyTestNGListener"></listener>
+	<listener class-name="listeners.MyTestListener"></listener>
   </listeners>
   
  <test name="Add New Stock Test">
      <parameter name="action" value="addstock" />
     <classes>
-      <class name="testcases.rediff.PortfolioManagement">
+      <class name="testcases.PortifolioManagement">
        <methods>
            <include name="selectPortFolio" />
        </methods>    
       </class>
-      <class name="testcases.rediff.StockManagement">
+      <class name="testcases.StockManagement">
        <methods>
            <include name="addNewStock" />
            <include name="verifyStockPresent" />
@@ -26,16 +26,16 @@
     </classes>
   </test>
   
-  
+ 
   <test name="Modify Stock Test - Sell Stock">
      <parameter name="action" value="sellstock" />
     <classes>
-      <class name="testcases.rediff.PortfolioManagement">
+      <class name="testcases.PortfolioManagement">
        <methods>
            <include name="selectPortFolio" />
        </methods>    
       </class>
-      <class name="testcases.rediff.StockManagement">
+      <class name="testcases.StockManagement">
        <methods>
            <include name="verifyStockPresent" />
            <include name="modifyStock" />
@@ -51,12 +51,12 @@
    <test name="Modify Stock Test - Add Stock">
      <parameter name="action" value="addstock" />
     <classes>
-      <class name="testcases.rediff.PortfolioManagement">
+      <class name="testcases.PortfolioManagement">
        <methods>
            <include name="selectPortFolio" />
        </methods>    
       </class>
-      <class name="testcases.rediff.StockManagement">
+      <class name="testcases.StockManagement">
        <methods>
            <include name="verifyStockPresent" />
            <include name="modifyStock" />
@@ -66,5 +66,5 @@
        </methods>    
       </class>
     </classes>
-  </test>
+  </test>  
 </suite> <!-- Suite -->
